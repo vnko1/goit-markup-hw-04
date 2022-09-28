@@ -259,15 +259,6 @@ ul {
   border-radius: 4px;
 }
 
-/* .benefits-icon-container {
-  width: 270px;
-  height: 120px;
-  padding: 25px 100px;
-  margin-bottom: 30px;
-  background-color: var(--teams-bgc);
-  border-radius: 4px;
-} */
-
 .benefits-item-title {
   margin-bottom: 10px;
   font-size: inherit;
@@ -380,7 +371,8 @@ ul {
   justify-content: center;
   align-items: center;
 }
-.clients-link:hover .clients-icon {
+.clients-link:hover .clients-icon,
+.clients-link:focus .clients-icon {
   fill: var(--accent-color);
 }
 .clients-link:hover {
