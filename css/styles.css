@@ -10,6 +10,7 @@
   --btn-bgc: #f5f4fa;
   --hover-hero-btn-color: #188ce8;
   --footer-links-color: rgba(255, 255, 255, 0.6);
+  --main-icon-color: #afb1b8;
   --main-bgc: #fff;
   --secondary-bgc: #2f303a;
   --teams-bgc: #f5f4fa;
@@ -126,6 +127,10 @@ ul {
   color: var(--main-color);
 }
 
+.icons {
+  fill: var(--main-icon-color);
+}
+
 .footer-links {
   line-height: calc(24 / 14);
 }
@@ -186,9 +191,20 @@ ul {
 /* HERO */
 
 .hero {
+  width: 1600px;
+  height: 600px;
   padding: 200px 0;
+  margin: 0 auto;
   background-color: var(--secondary-bgc);
   text-align: center;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
 }
 
 .hero-title {
@@ -228,6 +244,15 @@ ul {
 
 .benefits-item {
   width: calc((100% - 3 * var(--typical-indent)) / 4);
+}
+
+.benefits-icon-container {
+  width: 270px;
+  height: 120px;
+  padding: 25px 100px;
+  margin-bottom: 30px;
+  background-color: var(--teams-bgc);
+  border-radius: 4px;
 }
 
 .benefits-item-title {
@@ -280,13 +305,17 @@ ul {
   margin-left: 30px;
 }
 
-.teams-item-container {
-  padding: 30px 0;
+.teams-item {
   border-radius: 0px 0px 4px 4px;
-  text-align: center;
-  background-color: var(--secondary-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.teams-item-container {
+  padding: 30px 0;
+
+  text-align: center;
+  background-color: var(--secondary-color);
 }
 
 .teams-item-title {
@@ -298,8 +327,34 @@ ul {
 }
 
 .teams-item-text {
+  margin-bottom: 16px;
   font-size: 16px;
   line-height: calc(19 / 16);
+}
+
+.teams-soc-list {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.teams-soc-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+
+.teams-soc-link:hover,
+.teams-soc-link:focus {
+  background-color: var(--accent-color);
+}
+
+.teams-soc-link:hover .teams-soc-icon,
+.teams-soc-link:focus .teams-soc-icon {
+  fill: var(--secondary-color);
 }
 
 /* PORTFOLIO */
