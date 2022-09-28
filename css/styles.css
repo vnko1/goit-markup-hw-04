@@ -154,6 +154,7 @@ ul {
 
 .header-nav-list {
   display: flex;
+  align-items: center;
   margin-left: 93px;
   gap: 50px;
 }
@@ -165,33 +166,21 @@ ul {
 .header-contacts-list {
   display: flex;
   margin-left: auto;
-  gap: 50px;
+  align-items: center;
+  gap: 30px;
 }
 
 .header-contacts-link {
   color: currentColor;
 }
 
-.header-mail-icon::before {
-  content: "";
-  display: inline-block;
-  width: 16px;
-  height: 12px;
+.header-icon {
   margin-right: 10px;
-  background-image: url(../images/envelope.svg);
-  background-repeat: no-repeat;
-  background-position: bottom;
 }
 
-.header-tel-icon::before {
-  content: "";
-  display: inline-block;
-  width: 10px;
-  height: 16px;
-  margin-right: 10px;
-  background-image: url(../images/smartphone.svg);
-  background-repeat: no-repeat;
-  background-position: bottom;
+.header-contacts-link:hover .header-icon,
+.header-contacts-link:focus .header-icon {
+  fill: var(--accent-color);
 }
 
 /* HERO */
