@@ -205,7 +205,6 @@ ul {
     url(../images/hero-bg.jpg);
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment: scroll;
   background-color: var(--secondary-bgc);
   text-align: center;
 }
