@@ -264,6 +264,7 @@ ul {
 
 .antenna:before {
   background-image: url(../images/antenna.svg);
+  /* background-size: 70px 70px; */
 }
 
 .clock:before {
