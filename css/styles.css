@@ -259,6 +259,7 @@ ul {
   background-color: var(--teams-bgc);
   background-repeat: no-repeat;
   background-position: center;
+  background-size: auto;
   border-radius: 4px;
 }
 
