@@ -248,11 +248,12 @@ ul {
   width: calc((100% - 3 * var(--typical-indent)) / 4);
 }
 
-.benefits-item-icon {
-  display: block;
-  width: 270px;
+.benefits-icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
   height: 120px;
-  padding: 25px 100px;
   margin-bottom: 30px;
   background-color: var(--teams-bgc);
   border-radius: 4px;
